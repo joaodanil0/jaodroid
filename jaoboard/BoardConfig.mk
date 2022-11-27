@@ -29,3 +29,16 @@ BOARD_KERNEL_CMDLINE		+= androidboot.boot_devices=soc/ffe07000.mmc
 BOARD_KERNEL_CMDLINE		+= androidboot.hardware=$(HARDWARE_NAME)
 BOARD_KERNEL_CMDLINE		+= androidboot.selinux=permissive
 # ================= END =================
+
+# ================= Boot Image =================
+BOARD_INCLUDE_DTB_IN_BOOTIMG	:= true
+BOARD_KERNEL_OFFSET				:= 0x1080000
+BOARD_MKBOOTIMG_ARGS			:= --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_BOOT_HEADER_VERSION		:= 2
+BOARD_KERNEL_TAGS_OFFSET		:= 0x1000000
+BOARD_MKBOOTIMG_ARGS			+= --header_version $(BOARD_BOOT_HEADER_VERSION)
+# ================= END =================
+
+# ================= Partitions Size =================
+BOARD_BOOTIMAGE_PARTITION_SIZE			:=	33554432
+# ================= END =================

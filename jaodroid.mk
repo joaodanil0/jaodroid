@@ -16,3 +16,8 @@ DTBO_UNSIGNED			:= dtbo-unsigned.img
 LOCAL_KERNEL            := device/casa/jaodroid/blackbox/${KERNEL_VERSION}/Image.lz4
 HARDWARE_NAME			:= jaodroid
 # ================= END =================
+
+# ================= Copy Kernel =================
+PRODUCT_COPY_FILES  += \
+	$(LOCAL_KERNEL):kernel
+# ================= END =================
