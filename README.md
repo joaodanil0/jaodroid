@@ -4,5 +4,5 @@ This project create a personal customized Android Product based on Khadas VIM3 (
 
 The purpose is create a minimal product and increment by as needed.
 
-The [Project]() show each step created.
+The [Project](https://github.com/users/joaodanil0/projects/4) show each step created.
 
