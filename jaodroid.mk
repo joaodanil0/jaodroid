@@ -21,3 +21,8 @@ HARDWARE_NAME			:= jaodroid
 PRODUCT_COPY_FILES  += \
 	$(LOCAL_KERNEL):kernel
 # ================= END =================
+
+# ================= Super Partition Options =================
+PRODUCT_BUILD_SUPER_PARTITION   := true
+PRODUCT_USE_DYNAMIC_PARTITIONS  := true
+# ================= END =================
