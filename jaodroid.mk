@@ -11,7 +11,8 @@ PRODUCT_MANUFACTURER    := jao
 
 # ================= Local Variables =================
 KERNEL_VERSION			:= 5.4
-LOCAL_KERNEL            := device/casa/jaodroid/blackbox/${KERNEL_VERSION}/Image.lz4
 LOCAL_DTB               := device/casa/jaodroid/blackbox/${KERNEL_VERSION}
 DTBO_UNSIGNED			:= dtbo-unsigned.img
+LOCAL_KERNEL            := device/casa/jaodroid/blackbox/${KERNEL_VERSION}/Image.lz4
+HARDWARE_NAME			:= jaodroid
 # ================= END =================
