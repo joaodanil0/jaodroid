@@ -22,7 +22,7 @@ BOARD_KERNEL_CMDLINE    +=  no_console_suspend
 BOARD_KERNEL_CMDLINE    +=  console=ttyAML0,115200
 BOARD_KERNEL_CMDLINE    +=  earlycon
 BOARD_KERNEL_CMDLINE    +=  printk.devkmsg=off
-BOARD_KERNEL_CMDLINE    +=  loglevel=7
+BOARD_KERNEL_CMDLINE    +=  loglevel=3
 BOARD_KERNEL_CMDLINE    +=  init=/init
 BOARD_KERNEL_CMDLINE    +=  firmware_class.path=/vendor/firmware
 BOARD_KERNEL_CMDLINE    +=  androidboot.boot_devices=soc/ffe07000.mmc 

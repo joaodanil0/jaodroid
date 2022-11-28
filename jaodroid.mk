@@ -26,3 +26,8 @@ PRODUCT_COPY_FILES  +=  \
 PRODUCT_BUILD_SUPER_PARTITION   :=  true
 PRODUCT_USE_DYNAMIC_PARTITIONS  :=  true
 # ================= END =================
+
+# ================= Fstab Files =================
+PRODUCT_COPY_FILES += \
+  $(LOCAL_PATH)/fstab/fstab.ramdisk.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.$(HARDWARE_NAME)
+# ================= END =================
