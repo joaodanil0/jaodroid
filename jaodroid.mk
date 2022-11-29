@@ -36,15 +36,15 @@ PRODUCT_COPY_FILES += \
 # ================= Init Files =================
 PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/init/init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.${HARDWARE_NAME}.rc \
-	$(LOCAL_PATH)/init/init.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.${HARDWARE_NAME}.usb.rc \
-	$(LOCAL_PATH)/init/init.adb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.${HARDWARE_NAME}.adb.rc \
+  $(LOCAL_PATH)/init/init.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.${HARDWARE_NAME}.usb.rc \
+  $(LOCAL_PATH)/init/init.adb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.${HARDWARE_NAME}.adb.rc \
   $(LOCAL_PATH)/init/init.recovery.rc:recovery/root/init.recovery.${HARDWARE_NAME}.rc  \
   $(LOCAL_PATH)/init/init.usb.rc:recovery/root/init.recovery.${HARDWARE_NAME}.usb.rc  \
 # ================= END =================
 
 # ================= Fastboot =================
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0 \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+  android.hardware.fastboot@1.0 \
+  android.hardware.fastboot@1.0-impl-mock \
+  fastbootd
 # ================= END =================
