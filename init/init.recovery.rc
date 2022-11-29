@@ -1,0 +1,7 @@
+import /init.recovery.${ro.hardware}.usb.rc
+
+on boot
+  write /config/usb_gadget/g1/strings/0x409/product ${ro.hardware}_recovery
+
+on init
+    setprop sys.usb.configfs 1
