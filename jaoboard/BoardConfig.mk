@@ -43,6 +43,7 @@ BOARD_MKBOOTIMG_ARGS          +=  --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_BOOTIMAGE_PARTITION_SIZE          :=  33554432
 BOARD_SUPER_PARTITION_SIZE              :=  2147483648
 BOARD_JAODROID_DYNAMIC_PARTITIONS_SIZE  :=  2143289344  #  It is necessary 4,096 KiB less than BOARD_SUPER_PARTITION_SIZE
+BOARD_RECOVERYIMAGE_PARTITION_SIZE      :=  33554432
 # ================= END =================
 
 # ================= Partition Type =================
@@ -60,3 +61,7 @@ BOARD_SUPER_IMAGE_IN_UPDATE_PACKAGE               :=  false
 TARGET_COPY_OUT_VENDOR                            :=  vendor
 # ================= END =================
 
+# ================= Recovery =================
+TARGET_RECOVERY_PIXEL_FORMAT  :=  RGBX_8888
+TARGET_RECOVERY_FSTAB         :=  device/casa/jaodroid/fstab/fstab.recovery.jaodroid
+# ================= END =================
