@@ -54,3 +54,9 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 # ================= END =================
+
+# ================= OpenGL ES implementation =================
+PRODUCT_PACKAGES +=  \
+    libGLES_mali \
+    libGLES_android
+# ================= END =================

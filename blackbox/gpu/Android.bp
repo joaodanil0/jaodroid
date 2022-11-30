@@ -1,0 +1,34 @@
+cc_prebuilt_library_shared {
+
+    name: "libGLES_mali",
+    compile_multilib: "both",
+    vendor: true,
+    relative_install_path: "egl",
+
+
+    multilib: {
+        lib32: {
+            srcs: ["library/libGLES_mali_default_8a_32-p-r16p0gralloc1.so"],
+        },
+        lib64: {
+            srcs: ["library/libGLES_mali_default_8a_64-p-r16p0gralloc1.so"],
+        },
+    },
+
+    shared_libs: [
+        "android.hardware.graphics.common@1.0",
+        "libz",
+        "libnativewindow",
+        "libc++",
+        "liblog",
+        "libm",
+        "libc",
+        "libdl",
+    ],
+    strip: {
+        none: true,
+    },
+
+
+
+}
