@@ -15,6 +15,7 @@ LOCAL_DTB         :=  device/casa/jaodroid/blackbox/${KERNEL_VERSION}
 DTBO_UNSIGNED     :=  dtbo-unsigned.img
 LOCAL_KERNEL      :=  device/casa/jaodroid/blackbox/${KERNEL_VERSION}/Image.lz4
 HARDWARE_NAME     :=  jaodroid
+TARGET_BOARD_PLATFORM := yukawa
 # ================= END =================
 
 # ================= Copy Kernel =================
@@ -59,4 +60,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES +=  \
     libGLES_mali \
     libGLES_android
+# ================= END =================
+
+# ================= suitable EGLConfig =================
+PRODUCT_PACKAGES += \
+	android.hardware.graphics.composer@2.1-impl \
+	android.hardware.graphics.composer@2.1-service \
+	android.hardware.graphics.allocator@2.0-service \
+	android.hardware.graphics.allocator@2.0-impl \
+	android.hardware.graphics.mapper@2.0-impl \
+	gralloc.yukawa
 # ================= END =================
