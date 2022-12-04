@@ -71,3 +71,18 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.mapper@2.0-impl-2.1
 # ================= END =================
+
+# ================= SHIPPING_API_LEVEL =================
+PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
+
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl-cuttlefish \
+    android.hardware.health@2.1-service
+
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service.software
+# ================= END =================
