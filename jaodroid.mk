@@ -86,3 +86,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 # ================= END =================
+
+# ================= DRM =================
+PRODUCT_PACKAGES += \
+    hwcomposer.drm_meson
+# ================= END =================
