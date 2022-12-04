@@ -44,11 +44,15 @@ BOARD_BOOTIMAGE_PARTITION_SIZE          :=  33554432
 BOARD_SUPER_PARTITION_SIZE              :=  2147483648
 BOARD_JAODROID_DYNAMIC_PARTITIONS_SIZE  :=  2143289344  #  It is necessary 4,096 KiB less than BOARD_SUPER_PARTITION_SIZE
 BOARD_RECOVERYIMAGE_PARTITION_SIZE      :=  33554432
+BOARD_CACHEIMAGE_PARTITION_SIZE         :=  268435456
+BOARD_USERDATAIMAGE_PARTITION_SIZE      :=  12884901888
 # ================= END =================
 
 # ================= Partition Type =================
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE    :=  ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE    :=  ext4
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE     :=  ext4
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE  :=  ext4
 # ================= END =================
 
 # ================= Super Partition Options =================
