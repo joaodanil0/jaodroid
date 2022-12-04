@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="def_lockscreen_disabled">true</bool>
+    <bool name="def_stay_on_while_plugged_in">true</bool>
+</resources>
