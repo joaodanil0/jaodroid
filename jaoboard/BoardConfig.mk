@@ -28,6 +28,7 @@ BOARD_KERNEL_CMDLINE    +=  firmware_class.path=/vendor/firmware
 BOARD_KERNEL_CMDLINE    +=  androidboot.boot_devices=soc/ffe07000.mmc 
 BOARD_KERNEL_CMDLINE    +=  androidboot.hardware=$(HARDWARE_NAME)
 BOARD_KERNEL_CMDLINE    +=  androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE    +=  drm.edid_firmware=edid/1920x1080.bin
 # ================= END =================
 
 # ================= Boot Image =================
