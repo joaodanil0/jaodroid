@@ -100,3 +100,16 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.3-impl
 # ================= END =================
+
+# ================= Settings Personal Configuration =================
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.sf.lcd_density=200
+
+DEVICE_PACKAGE_OVERLAYS := \
+  device/casa/jaodroid/overlay
+
+PRODUCT_COPY_FILES +=  \
+  frameworks/native/data/etc/android.software.app_widgets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.app_widgets.xml
+# ================= END =================
