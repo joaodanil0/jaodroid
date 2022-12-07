@@ -113,10 +113,3 @@ DEVICE_PACKAGE_OVERLAYS := \
 PRODUCT_COPY_FILES +=  \
   frameworks/native/data/etc/android.software.app_widgets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.app_widgets.xml
 # ================= END =================
-
-# ================= Bt/wifi firmware =================
-PRODUCT_COPY_FILES += \
-  $(LOCAL_PATH)/blackbox/bt-wifi-firmware/BCM.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/BCM4359C0.hcd \
-  $(LOCAL_PATH)/blackbox/bt-wifi-firmware/fw_bcm4359c0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/fw_bcm4359c0_ag.bin \
-  $(LOCAL_PATH)/blackbox/bt-wifi-firmware/nvram.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/nvram.txt
-# ================= END =================
