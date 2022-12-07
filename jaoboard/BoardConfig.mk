@@ -70,3 +70,9 @@ TARGET_COPY_OUT_VENDOR                            :=  vendor
 TARGET_RECOVERY_PIXEL_FORMAT  :=  RGBX_8888
 TARGET_RECOVERY_FSTAB         :=  device/casa/jaodroid/fstab/fstab.recovery.jaodroid
 # ================= END =================
+
+# ================= Wifi =================
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_DRIVER := NL80211
+# ================= END =================
