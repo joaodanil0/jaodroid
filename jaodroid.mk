@@ -120,3 +120,15 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/blackbox/bt-wifi-firmware/fw_bcm4359c0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/fw_bcm4359c0_ag.bin \
   $(LOCAL_PATH)/blackbox/bt-wifi-firmware/nvram.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/nvram.txt
 # ================= END =================
+
+# ================= Wifi =================
+PRODUCT_PACKAGES += \
+  libwpa_client \
+  wpa_supplicant \
+  hostapd \
+  wificond \
+  wpa_cli 
+
+PRODUCT_COPY_FILES +=  \
+  frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+# ================= END =================
