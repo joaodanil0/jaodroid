@@ -43,7 +43,7 @@ BOARD_MKBOOTIMG_ARGS          +=  --header_version $(BOARD_BOOT_HEADER_VERSION)
 # ================= Partitions Size =================
 BOARD_BOOTIMAGE_PARTITION_SIZE          :=  33554432
 BOARD_SUPER_PARTITION_SIZE              :=  2147483648
-BOARD_JAODROID_DYNAMIC_PARTITIONS_SIZE  :=  2143289344  #  It is necessary 4,096 KiB less than BOARD_SUPER_PARTITION_SIZE
+BOARD_JAOAUTO_DYNAMIC_PARTITIONS_SIZE  :=  2143289344  #  It is necessary 4,096 KiB less than BOARD_SUPER_PARTITION_SIZE
 BOARD_RECOVERYIMAGE_PARTITION_SIZE      :=  33554432
 BOARD_CACHEIMAGE_PARTITION_SIZE         :=  268435456
 BOARD_USERDATAIMAGE_PARTITION_SIZE      :=  12884901888
@@ -59,8 +59,8 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE  :=  ext4
 # ================= Super Partition Options =================
 TARGET_USE_DYNAMIC_PARTITIONS                     :=  true
 BOARD_BUILD_SUPER_IMAGE_BY_DEFAULT                :=  true
-BOARD_SUPER_PARTITION_GROUPS                      :=  jaodroid_dynamic_partitions
-BOARD_JAODROID_DYNAMIC_PARTITIONS_PARTITION_LIST  :=  system vendor
+BOARD_SUPER_PARTITION_GROUPS                      :=  jaoauto_dynamic_partitions
+BOARD_JAOAUTO_DYNAMIC_PARTITIONS_PARTITION_LIST   :=  system vendor
 BOARD_SUPER_PARTITION_METADATA_DEVICE             :=  super
 BOARD_SUPER_IMAGE_IN_UPDATE_PACKAGE               :=  false
 TARGET_COPY_OUT_VENDOR                            :=  vendor

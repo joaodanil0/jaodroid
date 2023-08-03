@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES   :=  \
-  $(LOCAL_DIR)/jaodroid.mk
+  $(LOCAL_DIR)/jaoauto.mk
 
 COMMON_LUNCH_CHOICES  :=  \
-  jaodroid-userdebug
+  jaoauto-userdebug

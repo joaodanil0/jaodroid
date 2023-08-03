@@ -1,9 +1,9 @@
 $(call  inherit-product,  $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call  inherit-product,  $(SRC_TARGET_DIR)/product/full_base.mk)
+# $(call  inherit-product,  $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # ================= Production Options =================
-PRODUCT_NAME            :=  jaodroid
-PRODUCT_DEVICE          :=  jaoboard
+PRODUCT_NAME            :=  jaoauto
+PRODUCT_DEVICE          :=  jaocar
 PRODUCT_BRAND           :=  generic
 PRODUCT_MODEL           :=  XPTO
 PRODUCT_MANUFACTURER    :=  jao
@@ -14,7 +14,7 @@ KERNEL_VERSION    :=  5.4
 LOCAL_DTB         :=  device/casa/jaodroid/blackbox/${KERNEL_VERSION}
 DTBO_UNSIGNED     :=  dtbo-unsigned.img
 LOCAL_KERNEL      :=  device/casa/jaodroid/blackbox/${KERNEL_VERSION}/Image.lz4
-HARDWARE_NAME     :=  jaodroid
+HARDWARE_NAME     :=  jaoauto
 TARGET_BOARD_PLATFORM := yukawa
 # ================= END =================
 
@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
 # ================= END =================
 
 # ================= Settings Personal Configuration =================
-$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+# $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.sf.lcd_density=200
@@ -110,8 +110,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS := \
   device/casa/jaodroid/overlay
 
-PRODUCT_COPY_FILES +=  \
-  frameworks/native/data/etc/android.software.app_widgets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.app_widgets.xml
+# PRODUCT_COPY_FILES +=  \
+#   frameworks/native/data/etc/android.software.app_widgets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.app_widgets.xml
 # ================= END =================
 
 # ================= Bt/wifi firmware =================
