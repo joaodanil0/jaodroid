@@ -76,3 +76,9 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_HOSTAPD_DRIVER := NL80211
 # ================= END =================
+
+# ================= SEPolicy =================
+BOARD_SEPOLICY_DIRS += device/casa/jaodroid/sepolicy
+# ================= END =================
+
+
