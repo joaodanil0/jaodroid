@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.sf.lcd_density=200
+  ro.sf.lcd_density=290
 
 DEVICE_PACKAGE_OVERLAYS := \
   device/casa/jaodroid/overlay
