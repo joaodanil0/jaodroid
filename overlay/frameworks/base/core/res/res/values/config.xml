@@ -22,4 +22,5 @@
 <resources>
     <!-- Separate software navigation bar required on this device. -->
     <bool name="config_showNavigationBar">true</bool>
+    <bool name="config_single_volume">true</bool>
 </resources>

@@ -11,7 +11,7 @@ PRODUCT_MANUFACTURER    :=  jao
 # ================= END =================
 
 # ================= Local Variables =================
-KERNEL_VERSION    :=  6.1-TS050
+KERNEL_VERSION    :=  6.1-TS050_OLED_ADC
 LOCAL_DTB         :=  device/casa/jaodroid/blackbox/kernel/${KERNEL_VERSION}
 DTBO_UNSIGNED     :=  dtbo-unsigned.img
 LOCAL_KERNEL      :=  device/casa/jaodroid/blackbox/kernel/${KERNEL_VERSION}/Image.lz4
@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
     gralloc.yukawa \
     android.hardware.graphics.composer@2.2-impl \
     android.hardware.graphics.composer@2.2-service \
-	android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.allocator@2.0-service \
 	android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.mapper@2.0-impl-2.1
 # ================= END =================
@@ -100,13 +100,18 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_COPY_FILES += \
+    device/casa/jaodroid/xml/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    device/casa/jaodroid/xml/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    device/casa/jaodroid/xml/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 # ================= END =================
 
 # ================= Settings Personal Configuration =================
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.sf.lcd_density=290
+  ro.sf.lcd_density=390 \
 
 DEVICE_PACKAGE_OVERLAYS := \
   device/casa/jaodroid/overlay
@@ -150,5 +155,22 @@ PRODUCT_COPY_FILES +=  \
   frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
   frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
 # ================= END =================
+
+# ================= BootAnimation =================
+PRODUCT_COPY_FILES += \
+    device/casa/jaodroid/bootanimation.zip:system/media/bootanimation.zip
+# ================= END =================
+
+# ================= USB Audio =================
+PRODUCT_PACKAGES += \
+    audio.usb.default \
+
+PRODUCT_COPY_FILES += \
+    device/casa/jaodroid/xml/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
+# ================= END =================
+
+
+
+
 
 
