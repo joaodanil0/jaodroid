@@ -158,7 +158,7 @@ PRODUCT_COPY_FILES +=  \
 
 # ================= BootAnimation =================
 PRODUCT_COPY_FILES += \
-    device/casa/jaodroid/bootanimation.zip:system/media/bootanimation.zip
+    device/casa/jaodroid/blackbox/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 # ================= END =================
 
 # ================= USB Audio =================
