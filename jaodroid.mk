@@ -170,7 +170,13 @@ PRODUCT_COPY_FILES += \
 # ================= END =================
 
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.media_vol_steps=15 \
+    ro.config.media_vol_default=15 \
+    persist.dbg.keep_debugfs_mounted=True
 
+PRODUCT_PACKAGES += \
+    testOLED
 
 
 

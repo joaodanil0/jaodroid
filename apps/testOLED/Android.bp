@@ -1,0 +1,12 @@
+cc_binary 
+{
+    name: "testOLED",
+    srcs: ["app.c"],
+    static_executable: true,
+    static_libs: ["libc"],
+
+    cflags: [
+        "-Wall", 
+        "-Werror"
+    ],
+}

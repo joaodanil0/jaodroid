@@ -2,7 +2,8 @@ import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
 import /vendor/etc/init/hw/init.${ro.hardware}.adb.rc
 
 on early-init
-  mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules ssd1306_out
+    chmod 0777 /dev/ssd1306_device
 
 on fs
   mount_all /vendor/etc/fstab.${ro.hardware}
@@ -23,3 +24,10 @@ service wpa_supplicant /system/vendor/bin/hw/wpa_supplicant \
   user root
   disabled
   oneshot
+
+on shutdown
+    exec /system/bin/rmmod /vendor/lib/modules ssd1306_out
+
+on restart
+    exec /system/bin/rmmod /vendor/lib/modules ssd1306_out
+
