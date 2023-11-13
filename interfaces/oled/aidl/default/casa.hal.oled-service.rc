@@ -1,0 +1,9 @@
+service casa.hal.oled-service /vendor/bin/hw/casa.hal.oled-service
+    interface aidl casa.hal.oled-service.IOled/default
+    class hal
+    user system
+    group system
+
+on boot
+    chown system system /dev/ssd1306_device
+    chmod 0666 /dev/ssd1306_device

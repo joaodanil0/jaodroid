@@ -3,7 +3,6 @@ import /vendor/etc/init/hw/init.${ro.hardware}.adb.rc
 
 on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules ssd1306_out
-    chmod 0777 /dev/ssd1306_device
 
 on fs
   mount_all /vendor/etc/fstab.${ro.hardware}

@@ -1,0 +1,22 @@
+aidl_interface {
+    name: "casa.hal.oled",
+    vendor: true,
+    srcs: ["casa/hal/oled/*.aidl"],
+    stability: "vintf",
+    owner: "Jão",
+    backend: 
+    {
+        cpp: 
+        {
+            enabled: false, //enabled by default
+        },
+        java: 
+        {
+            sdk_version: "module_current",
+        },
+        ndk: 
+        {
+            enabled: true, //enabled by default, just exposing
+        }
+    },
+}

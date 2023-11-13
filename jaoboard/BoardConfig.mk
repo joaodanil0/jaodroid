@@ -84,3 +84,5 @@ BOARD_SEPOLICY_DIRS += device/casa/jaodroid/sepolicy
 
 BOARD_VENDOR_KERNEL_MODULES := \
     device/casa/jaodroid/blackbox/kernel/modules/ssd1306_out.ko
+
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE :=  device/casa/jaodroid/xml/compatible_matrix.xml

@@ -1,0 +1,28 @@
+cc_binary {
+  name: "casa.hal.oled-service",
+  vendor: true,
+  relative_install_path: "hw",
+  init_rc: ["casa.hal.oled-service.rc"],
+  vintf_fragments: ["casa.hal.oled-service.xml"],
+
+  srcs: [
+    "service.cpp",
+    "Oled.cpp"
+  ],
+
+  cflags: [
+    "-Wall",
+    "-Werror",
+  ],
+
+  shared_libs: [
+    "libbase",
+    "liblog",
+    "libhardware",
+    "libbinder_ndk",
+    "libbinder",
+    "libutils",
+    //ndk_platform will be deprecated on Android 13. 
+    "casa.hal.oled-V1-ndk",
+  ],
+}

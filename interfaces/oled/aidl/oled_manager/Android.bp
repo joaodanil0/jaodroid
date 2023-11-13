@@ -1,0 +1,22 @@
+java_library 
+{
+    name: "casa.hal.oledmanager",
+    srcs: ["src/**/*.java"],
+    static_libs: ["casa.hal.oled-V1-java"],
+    required:["casa.hal.oledmanager.xml"],
+    system_ext_specific: true,
+    platform_apis: true,
+    installable: true,
+
+}
+
+prebuilt_etc {
+    name: "casa.hal.oledmanager.xml",
+    src:  "casa.hal.oledmanager.xml",
+    filename_from_src: true,
+    relative_install_path: "permissions",
+    system_ext_specific: true,
+}
+    
+   
+    

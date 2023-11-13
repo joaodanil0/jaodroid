@@ -176,7 +176,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.keep_debugfs_mounted=True
 
 PRODUCT_PACKAGES += \
-    testOLED
-
+    testOLED \
+    casa.hal.oled \
+    casa.hal.oled-service \
+    OLedTest \
+	casa.hal.oledmanager
+	
 
 

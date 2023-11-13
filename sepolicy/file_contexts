@@ -1,2 +1,4 @@
 
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software	u:object_r:hal_gatekeeper_default_exec:s0
+
+/vendor/bin/hw/casa\.hal\.oled-service         u:object_r:hal_oled_default_exec:s0
